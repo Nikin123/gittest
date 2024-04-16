@@ -2,18 +2,29 @@
   
 ## описание
   
-### пункт 1
+- базовые команды по git  
+- синхронизация с удаленным git
+
   
-1. обучение
-2. закрепление
-  
-### пункт2
-  
-1. общее понимание
-2. практика
-  
-### пункт 2
-  
-### ссылка
-  
-[repo](https://github.com/Nikin123/gittest)
+## работа с локальным git  
+### создание, конфигурирование  
+git init  
+git status  
+
+
+### добавление изменений с коммит
+git add .  
+git commit -m "%%"  
+git log  
+
+## работа с удаленным git  
+### создание репозитория  
+[репозиторий GIT](https://github.com/Nikin123/gittest)
+### настройка ssh  
+ssh-keygen -t ed25519 -C "email"
+pub -> вносим в настройки репозитория на GIT
+ssh -T git@github.com
+### синхронизация локального и удаленного git  
+git remote add origin git@github.com:Nikin123/gittest.git  
+git remote -v  
+git push 
