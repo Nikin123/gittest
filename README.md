@@ -38,6 +38,13 @@ git log --oneline - сокращенный вывод коммитов
   
 ## HEAD git  
 HEAD - служебный файл папки .git, указывает на последний коммит  
-refs/heads/master - хранится хэш последнего коммита
+refs/heads/master - хранится хэш последнего коммита  
   
-## статусы фалов в репозитории
+## статусы фалов в репозитории  
+Статусы untracked/tracked, staged и modified  
+  
+```mermaid
+graph LR;
+  untracked -- "git add"                --> staged;
+  staged    -- "git commit -m 'commit'" --> tracked/comitted;
+```  
