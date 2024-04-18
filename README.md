@@ -27,4 +27,16 @@ ssh -T git@github.com
 ### синхронизация локального и удаленного git  
 git remote add origin git@github.com:Nikin123/gittest.git  
 git remote -v  
-git push 
+git push  
+  
+## информация по git log  
+вывод git log
+commit - xеш, основной идентификатор коммита  
+Author — имя автора и его электронная почта  
+Date — дата и время создания коммита  
+git log --oneline - сокращенный вывод коммитов  
+  
+## HEAD git  
+  
+  
+## статусы фалов в репозитории
